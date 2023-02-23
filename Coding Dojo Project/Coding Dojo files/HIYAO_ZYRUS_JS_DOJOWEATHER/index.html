@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+        <h1>DojoWeather</h1>
+        <ul>
+            <li><a href=#burbank onclick="clickCity(this)">Burbank</a></li>
+            <li><a href="#chicago" onclick="clickCity(this)">Chicago</a></li>
+            <li><a href="#dallas" onclick="clickCity(this)">Dallas</a></li>
+        </ul>
+    </nav>
+
+    <div id="title-div">
+        <div id="main-city">San Jose</div>
+        <div id="temp-unit">
+            Show temperature in 
+            <select name="unit" id="temp-dropdown" onchange="chosenTemp(this)">
+                <option value="celsius">&#8451; - Celsius</option>
+                <option value="fahrenheit">&#8457; - Farenheit</option>
+            </select>
+        </div>
+    </div>
+ 
+    <!-- <hr> -->
+
+    <div id="weather">
+    <!-- today -->
+        <div class="box-1" onmouseover="shadeFX(this)" onmouseout="undoShade(this)">
+            <h2>Today</h2>
+            <div class="imgSource">
+                <img src="assets/some_rain.png" alt="Rainy">
+            </div>
+            <p>some rain</p>
+            <div class="temperature">
+                <ul>
+                    <li class="temp-1">24&deg;</li>
+                    <li class="temp-2">18&deg;</li>
+                </ul>
+            </div>
+        </div>
+    <!-- tomorrow -->
+        <div class="box-2" onmouseover="shadeFX(this)" onmouseout="undoShade(this)">
+            <h2>Tomorrow</h2>
+            <div class="imgSource">
+                <img src="assets/some_sun.png" alt="Sunny">
+            </div>
+            <p>some sun</p>
+            <div class="temperature">
+                <ul>
+                    <li class="temp-1">27&deg;</li>
+                    <li class="temp-2">19&deg;</li>
+                </ul>
+            </div>
+        </div>
+    <!-- friday -->
+        <div class="box-3" onmouseover="shadeFX(this)" onmouseout="undoShade(this)">
+            <h2>Friday</h2>
+            <div class="imgSource">
+                <img src="assets/some_clouds.png" alt="Cloudy">
+            </div>
+            <p>some clouds</p>
+            <div class="temperature">
+                <ul>
+                    <li class="temp-1">21&deg;</li>
+                    <li class="temp-2">16&deg;</li>
+                </ul>
+            </div>
+        </div>
+    <!-- saturday -->
+        <div class="box-4" onmouseover="shadeFX(this)" onmouseout="undoShade(this)">
+            <h2>Saturday</h2>
+            <div class="imgSource">
+                <img src="assets/some_sun.png" alt="Sunny">
+            </div>
+            <p>some sun</p>
+            <div class="temperature">
+                <ul>
+                    <li class="temp-1">26&deg;</li>
+                    <li class="temp-2">21&deg;</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="box-5" onmouseover="shadeFX(this)" onmouseout="undoShade(this)">
+            <h2>Sunday</h2>
+            <div class="imgSource">
+                <img src="assets/some_clouds.png" alt="Cloudy">
+            </div>
+            <p>some sun</p>
+            <div class="temperature">
+                <ul>
+                    <li class="temp-1">20&deg;</li>
+                    <li class="temp-2">26&deg;</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="box-6" onmouseover="shadeFX(this)" onmouseout="undoShade(this)">
+            <h2>Monday</h2>
+            <div class="imgSource">
+                <img src="assets/some_rain.png" alt="Rainy">
+            </div>
+            <p>some sun</p>
+            <div class="temperature">
+                <ul>
+                    <li class="temp-1">18&deg;</li>
+                    <li class="temp-2">28&deg;</li>
+                </ul>
+            </div>
+        </div>
+
+        
+    </div> 
+
+    <div id="cookie">
+        <p id="cookie-alert">
+          <span><strong>Stop!</strong></span> Cookie time
+        </p>
+ 
+        
+        <div id="cookie-message">
+            <div id="cookie-col-1">
+                <img src="assets/cookie.png" alt="cookie img" >
+            </div>
+            <div id="cookie-col-2">
+                <p id="cookie-content">We use cookies (sadly not the edible ones) to personalize
+                    <br>
+                    content and ads to provide social media features and to
+                    <br>
+                    analyse our traffic. <a href="#read">Read more..</a>
+                </p>
+            </div>
+            <div id="cookie-col-3">
+                <button onclick="agreeBtn()">I accept</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- for testing purposes -->
+    <!-- <div>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate in eligendi magni facere temporibus incidunt soluta odio, minima reprehenderit rem.</p>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate in eligendi magni facere temporibus incidunt soluta odio, minima reprehenderit rem.</p>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate in eligendi magni facere temporibus incidunt soluta odio, minima reprehenderit rem.</p>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate in eligendi magni facere temporibus incidunt soluta odio, minima reprehenderit rem.</p>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate in eligendi magni facere temporibus incidunt soluta odio, minima reprehenderit rem.</p>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate in eligendi magni facere temporibus incidunt soluta odio, minima reprehenderit rem.</p>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate in eligendi magni facere temporibus incidunt soluta odio, minima reprehenderit rem.</p>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate in eligendi magni facere temporibus incidunt soluta odio, minima reprehenderit rem.</p>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate in eligendi magni facere temporibus incidunt soluta odio, minima reprehenderit rem.</p>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate in eligendi magni facere temporibus incidunt soluta odio, minima reprehenderit rem.</p>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate in eligendi magni facere temporibus incidunt soluta odio, minima reprehenderit rem.</p>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate in eligendi magni facere temporibus incidunt soluta odio, minima reprehenderit rem.</p>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate in eligendi magni facere temporibus incidunt soluta odio, minima reprehenderit rem.</p>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate in eligendi magni facere temporibus incidunt soluta odio, minima reprehenderit rem.</p>
+    </div> -->
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

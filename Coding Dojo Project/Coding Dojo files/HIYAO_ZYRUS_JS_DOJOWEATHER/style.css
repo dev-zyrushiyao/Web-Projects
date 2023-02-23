@@ -1,0 +1,249 @@
+body{ 
+    background-color: white;
+}
+
+
+nav {
+    background-color: #9fc5f8;
+    border-radius: 5px;
+    display: flex;
+}
+
+nav h1 {
+    flex: 1;
+
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px silver;
+
+    font-size: 40px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+nav > ul {
+    flex: 1;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    list-style-type: none;
+}
+
+nav li {
+    display: flex;
+}
+
+
+
+nav li a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    letter-spacing: 3px;
+    
+    font-size: 20px;
+
+    transition: 0.4s ease-out;
+    
+}
+
+
+
+a:link   {
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+a:hover {
+    font-size: 24px;
+  
+    color: #EEEEEE;
+}
+
+a:active {
+    color: salmon;
+}
+
+
+
+#title-div {
+
+    display: flex;
+    width: 60%;
+    margin: auto;
+    padding: 15px;
+
+    font-size: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    border-bottom: 1px solid silver;
+   
+}
+
+#main-city {
+   flex:1;
+}
+
+#temp-dropdown {
+   
+   font-size:20px;
+}
+
+#weather {
+    display: flex;
+    
+    width: 62%;
+
+    margin: auto;
+    margin-top: 20px;
+
+    padding:0px;
+    overflow-x: auto;
+    overflow-y:hidden
+    
+}
+
+[class*="box"] {
+
+    background-color: #eeeeee;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.4s ease-in-out;
+}
+
+[class*="box"] > p {
+    font-size: 20px;
+}
+
+/* Class injection to JS */
+.shade-hover{
+    background-color: #BCCEF8;
+}
+
+[class*="box"] > h2 , img , p {
+    text-align: center;
+}
+
+.imgSource {
+  
+   display: flex;
+   justify-content: center;
+}
+
+img {
+
+    height: 200px;
+    border-radius: 50%;
+    
+}
+
+.temperature{
+    
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+   
+    width: 160px;
+    
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+ul li {
+    margin-left: -35px;
+    list-style-type: none;
+   
+}
+
+.temp-1 {
+    color: red;
+}
+
+.temp-2 {
+    color: blue;
+}
+
+[class*="temp"]{
+    font-size: 30px;
+   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#cookie {
+    border: 3px solid black;
+    border-radius: 20px;
+
+    height: 230px;
+    width: 60%;
+
+   
+    margin-top: 15px;  
+    /* margin: auto; */
+
+    /* required on this assigment for checking */
+    position: fixed;
+    left: 360px;
+
+    background-color: rgba(238, 238, 238 , 0.9);
+    
+
+}
+
+#cookie-alert {
+    text-align: left;
+    font-size: 24px;
+    margin-left: 220px;
+ 
+}   
+
+[alt^="cookie"]{
+    height: 100px;
+}
+
+#cookie-message{
+    display:flex;
+   
+}
+
+#cookie-col-1 {
+    flex:1;
+
+    display: flex;
+    justify-content: center;
+}
+
+#cookie-col-2 {
+    flex:3;
+}
+
+#cookie-col-2 > #cookie-content {
+    text-align: left;
+    margin-top: 10px;
+
+
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#cookie-col-3 {
+    flex:1;
+
+    text-align: center;
+    margin-top: 25px;
+}
+
+button { 
+    height: 50px;
+    width: 100px;
+
+    background-color: #E8D5C4;
+}
