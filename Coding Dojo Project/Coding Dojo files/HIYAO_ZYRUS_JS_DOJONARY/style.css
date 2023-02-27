@@ -1,0 +1,233 @@
+
+#nav {
+    background-color: silver;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+
+    height: 100px;
+    border: 1px solid none;
+    border-radius: 10px;
+
+    position: relative;
+}
+
+#nav > * {
+    border: 1px solid white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* h1 ID is not working #nav-left (for code review)*/
+#nav-left, #nav-mid , #nav-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: black;
+}
+
+.emphasis {
+    font-style: italic;
+}
+
+#strong {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+a:link {
+    text-decoration: none;
+    color: blue;
+}
+
+a:visited {
+    color: green;
+}
+
+a:active{
+    color: red;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:link:hover {
+    text-decoration: none;
+}
+
+
+#nav-text {
+    width: 40%;
+    height: 30%;
+
+    border-color: transparent;
+    border-radius: 5px;
+
+    outline: 0px solid rgba(43, 120, 228, 0); 
+    transition: 0.5s linear;
+}
+
+#nav-text:focus {
+    opacity: 1;
+    outline: 5px solid;
+    outline-color: rgba(43, 120, 228, 1); 
+}
+
+
+.btn {
+width: 50%;
+height: 50%;
+
+background-color: #2b78e4;
+color: white;
+font-size: 1.2em;
+
+box-shadow: 3px 2px 2px black;
+border-radius: 5px;
+transition: 0.5s ease-in-out;
+}
+
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 2px black;
+}
+
+#main {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+   
+}
+
+
+#left-div {
+ 
+    width: 50%; 
+}
+
+#right-div {
+    
+    width: 25%; 
+
+}
+
+.box-design{
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 30px;
+}
+
+.box-content{
+    display: flex;
+    
+}
+
+.content-1{
+    flex:2;
+
+}
+
+.content-2{
+    flex: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1 h2 {
+   font-size: 40px;
+    text-align: center;
+}
+
+.part-speech{
+    font-size: 35px;
+} 
+
+.section-1 > label {
+    display: flex;
+    justify-content: center;
+}
+
+.grammatical-category {
+    font-size: 24px;
+}
+
+
+.section-2 > p {
+    font-size: 35px;
+  
+}
+
+.content-box{
+   padding: 10px;
+
+}
+
+.likeBtn { /* inheriting .btn attributes and pseudo-class + overwrites color and width on 2nd class */
+    background-color: #ffd966;
+    color: black;
+    
+    border-radius: 0px;
+    height: 40px;
+    margin-left: 50px;
+    width: 30%;
+}
+
+#left-div .content-1 > p {
+    color: red;
+}
+
+
+#right-div .content-3 {
+    position: relative;
+}
+
+
+#right-div .content-3 > * {
+    display: inline-block;
+}
+
+
+
+
+#right-div #big-letter::first-letter {
+    color: green;
+    font-size: 100px;
+    margin-left: 50px;
+
+ 
+}
+
+#right-div #stacked-text{
+        font-size: 20px;
+
+        position: relative;
+        top: -15px;
+    
+}
+
+#right-div .defBtn{
+    background-color: #93c47d;
+    height: 50px;
+    padding: 10px;
+    width: 50%;
+
+    margin-left: 70px;
+}
+
+@media only screen and (max-width: 720px) {
+    body {
+      padding: 0;
+      margin: 0;
+      border: 0;
+      font-size: 100%
+    }
+  }

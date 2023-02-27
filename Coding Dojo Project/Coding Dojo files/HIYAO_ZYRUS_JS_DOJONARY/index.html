@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Inheritance: buttons + overrite later on a separate class to implement new design -->
+    <!-- box-design for all boxes all of its child descendant -->
+   
+
+        <div id="nav">
+            <div id="nav-left">
+                <h1><a href="#home">Dojonary</a></h1>
+            </div>
+            <div id="nav-mid">
+                <input type="text" name="nav-text" id="nav-text" placeholder="Search" title="Search word here">
+            </div>
+            <div id="nav-right">
+            <button class="btn" id="js-btn">Login</button>
+            </div>
+        </div>
+    
+    <div id="main">
+        
+        <div id="left-div">
+            <!-- card 1 -->
+            <div class="box-design">
+                <div class="box-content"> <!-- display flex -->
+                    <div class="content-1">  <!-- flex spacing -->
+                        <div class="section-1"> <!-- created section DIV to avoid inheriting the flex of elements inside -->
+                            <h2>Ninja</h2>
+                            <label class="part-speech">noun</label>
+                            <label class="grammatical-category">
+                                Plural: <span class="emphasis">ninjas</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="content-2"> <!-- flex spacing -->
+                        <div class="section-2">  <!-- created section DIV to avoid inheriting the flex of elements inside -->
+                            <p>
+                                A practicioner skilled in the
+                                <br>
+                                <a href="https://en.wikipedia.org/wiki/Japanese_people">Japanese</a>
+                                art of <a href="https://en.wikipedia.org/wiki/Ninjutsu">Ninjustsu</a>.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="content-box">
+                    <button class="btn likeBtn" id="like-btn-1">0 likes</button>
+                </div>
+            </div>
+
+             <!-- card 2 -->
+             <div class="box-design">
+                <div class="box-content">
+                    <div class="content-1">
+                        <div class="section-1">
+                            <h2>Ninja</h2>
+                            <label class="part-speech">noun</label>
+                            <label class="grammatical-category">
+                                Plural: <span class="emphasis">ninjas</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="content-2">
+                        <div class="section-2">
+                            <p>
+                                A <a href="https://en.wikipedia.org/wiki/Programmer">programmer</a> who breaks
+                                down problems with a <a href="https://en.wikipedia.org/wiki/Zen">zen</a>-like focus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- this div is outside the box-content div -->
+                 <div class="content-box">
+                    <button class="btn likeBtn" id="like-btn-2">0 likes</button>
+                </div>
+            </div>
+
+        </div>
+       
+        <div id="right-div">
+            <!-- card 1 right -->
+            <div class="box-design">
+                <div class="box-content">
+                    <div class="content-3">   
+                        <p id="big-letter">D</p>
+                        <p id="stacked-text">
+                            ojonary is
+                            <br>
+                            efined by <span id="strong">you</span> 
+                        </p>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <button class="btn likeBtn defBtn" id="add-defBtn">Add Definition</button>
+                </div>
+            </div>
+        </div>
+
+    </div>    
+
+    <script src="index.js"></script>
+</body>
+</html>
